@@ -1,9 +1,71 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Example</title>
-    </head>
-    <body>
-        <p>This is an example of a simple HTML page with one paragraph.</p>
-    </body>
+<html lang="en">
+  <head>
+    <title>Tal Remez</title>
+    <meta property="og:title">
+    <meta property="og:type" content="article">
+    <!-- FIXME(shillingford): add final URL -->
+    <meta property="og:url" content="">
+    <meta property="og:image" content="images/vdtts_teaser.webp">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap" rel="preload" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="main">
+
+      <h1 class="title">
+        Tal Remez Ph.D
+      </h1>
+      <h3>
+        talremez at gmail dot com
+      </h3>
+
+      <table width="900" align="center" border="0" cellpadding="0">
+          <tbody><tr>
+            <td width="25%" valign="center">
+              <img src="./images/profilepic.webp" alt="visually driven tts" width="200" height="" style="border-style: none">
+            </td>
+            <td width="75%" valign="top">
+              I am part of Google Research and Machine Intelligence (RMI). Before that I was an intern at Google, General Motors and Microsoft. I received my PhD and MSc from Tel-Aviv University, where I was advised by Prof. Alex Bronstein and Prof. Shai Avidan. I recieved my MBA and BSc in Applied Physics from the Hebrew University under Amirim.
+              <br><br>
+              My research interests include: visual perception and computational photography as well as audio-visual applications for speech and audio enhancement. 
+              <br><br>
+              <b>I’m searching for my next big challenge where I can make a significant impact.</b>
+            </td>
+
+          </tr></tbody></table>      
+        
+      <br><br><br><br>
+      <hr>
+      
+      <h2 class="title">
+        Publications
+      </h2>
+      <table width="1000" align="center" border="0" cellpadding="0">
+          <tbody>
+
+
+            <tr>
+              <td width="35%" valign="center">
+                <img src="./images/vdtts_teaser.webp" alt="visually driven tts" width="300" height="" style="border-style: none">
+              </td>
+              <td width="65%" valign="top">
+                <p><a href="https://arxiv.org/abs/2111.10139">
+                  <heading>More than Words: In-the-Wild Visually-Driven Prosody for Text-to-Speech</heading></a><br>
+                  <span v-html="pub.authors"></span><br>
+                  <em>Michael Hassid, Michelle Tadmor Ramanovich, Brendan Shillingford, Miaosen Wang, Ye Jia, Tal Remez</em>
+                  <br><br>
+                  Under review CVPR 2022
+                </p>
+              </td>
+            </tr>
+
+
+        </tbody></table>
+        <hr>
+      </body>
 </html>
