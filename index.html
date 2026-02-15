@@ -1,399 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Tal Remez</title>
-    <meta property="og:title">
-    <meta property="og:type" content="article">
-    <!-- FIXME(shillingford): add final URL -->
-    <meta property="og:url" content="">
-    <meta property="og:image" content="images/vdtts_teaser.webp">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tal Remez | AI Researcher</title>
+    <meta property="og:title" content="Tal Remez | AI Researcher">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/vdtts_teaser.webp">
     <meta name="google-site-verification" content="DBam0wHetCHKLyRf6Hwi5UM7sj_Ilaqe_NBwOVKiPIc" />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap" rel="preload" as="style">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="main">
 
-      <h1 class="title">
-        Tal Remez Ph.D
-      </h1>
-      <h3>
-        talremez at gmail dot com
-      </h3>
+      <header>
+        <h1 class="title">Tal Remez, Ph.D.</h1>
+        <div class="contact-info">talremez at gmail dot com</div>
+      </header>
 
-      <table width="900" align="center" border="0" cellpadding="0">
-          <tbody><tr>
-            <td width="25%" valign="center">
-              <img src="./images/profilepic.webp" alt="tal" width="200" height="" style="border-style: none">
-            </td>
-            <td width="75%" valign="top">
-I am an AI researcher with a PhD in machine learning, specializing in the development of large-scale foundation models and innovative architectures like world models. My expertise spans multi-modal large language models (LLMs) encompassing video, audio, and textual data, as well as core areas like optimization, visual perception, and computational photography.
+      <section class="profile-section">
+        <img src="./images/profilepic.webp" alt="Tal Remez" class="profile-pic">
+        <div class="bio-text">
+          <p>
+            I am an <strong>AI researcher</strong> with a PhD in machine learning, specializing in the development of <strong>large-scale foundation models</strong> and innovative architectures like world models. My expertise spans multi-modal large language models (LLMs) encompassing video, audio, and textual data, as well as core areas like optimization, visual perception, and computational photography.
+          </p>
+          <p>
+            My latest work at Amazon and FAIR has centered on pushing the boundaries of these models, including leading a project on large-scale multi-modal foundation models for sport understanding and developing a "Code World Model." This work includes high-impact applications of multi-modal LLMs in audio/music generation, text/code generation, and advanced research into techniques like flow matching and discrete flow matching for tasks such as text continuation and chain-of-thought reasoning.
+          </p>
+        </div>
+      </section>
 
-My latest work at Amazon and FAIR has centered on pushing the boundaries of these models, including leading a project on large-scale multi-modal foundation models for sport understanding and developing a "Code World Model." This work includes high-impact applications of multi-modal LLMs in audio/music generation, text/code generation, and advanced research into techniques like flow matching and discrete flow matching for tasks such as text continuation and chain-of-thought reasoning.
+      <h2 class="section-title">Publications</h2>
 
-            </td>
+      <!-- Publication: CWM -->
+      <div class="pub-item">
+        <div class="pub-image-container">
+          <img src="./images/cwm.png" alt="CWM: An Open-Weights LLM for Research on Code Generation with World Models" class="pub-image">
+        </div>
+        <div class="pub-content">
+          <div class="pub-venue">arXiv 2025</div>
+          <a href="https://arxiv.org/abs/2510.02387" class="pub-title">CWM: An Open-Weights LLM for Research on Code Generation with World Models</a>
+          <div class="pub-authors"></div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2510.02387">Paper</a>
+          </div>
+        </div>
+      </div>
 
-          </tr></tbody></table>      
-        
-      <br><br><br><br>
-      <hr>
-      
-      <h2 class="title">
-        Publications
-      </h2>
-      <br><hr><br>
-      <table width="1000" align="center" border="0" cellpadding="0">
-          <tbody>
-            <tr>
-              <td width="35%" valign="center">
-                <img src="./images/dfm.png" alt="dfm" width="300" height="" style="border-style: none">
-              </td>
-              <td width="65%" valign="center">
-                <p><a href="https://arxiv.org/pdf/2407.15595">
-                  <heading>Discrete flow matching</heading></a><br>
-                  <span v-html="pub.authors"></span><br>
-                  <em>Itai Gat, Tal Remez, Neta Shaul, Felix Kreuk, Ricky TQ Chen, Gabriel Synnaeve, Yossi Adi, Yaron Lipman</em>
-                  <br><br>
-                  NeurIPS 2024
-                </p>
-              </td>
-            </tr>
-        </tbody>
-      </table>
-      <br><hr><br>
-      <table width="1000" align="center" border="0" cellpadding="0">
-          <tbody>
-            <tr>
-              <td width="35%" valign="center">
-                <img src="./images/larger.png" alt="larger" width="300" height="" style="border-style: none">
-              </td>
-              <td width="65%" valign="center">
-                <p><a href="https://arxiv.org/abs/2404.00725">
-                  <heading>The Larger the Better? Improved LLM Code-Generation via Budget Reallocation</heading></a><br>
-                  <span v-html="pub.authors"></span><br>
-                  <em>Michael Hassid*, Tal Remez*, Jonas Gehring, Roy Schwartz, Yossi Adi</em>
-                  <br><br>
-                  COLM 2024
-                </p>
-              </td>
-            </tr>
-        </tbody>
-      </table>
-      <br><hr><br>
-      <table width="1000" align="center" border="0" cellpadding="0">
-          <tbody>
-            <tr>
-              <td width="35%" valign="center">
-                <img src="./images/musicgen.png" alt="musicgen" width="300" height="" style="border-style: none">
-              </td>
-              <td width="65%" valign="center">
-                <p><a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/94b472a1842cd7c56dcb125fb2765fbd-Paper-Conference.pdf">
-                  <heading>Simple and controllable music generation</heading></a><br>
-                  <span v-html="pub.authors"></span><br>
-                  <em>Jade Copet, Felix Kreuk, Itai Gat, Tal Remez, David Kant, Gabriel Synnaeve, Yossi Adi, Alexandre Défossez</em>
-                  <br><br>
-                  NeurIPS 2024
-                </p>
-              </td>
-            </tr>
-        </tbody>
-      </table>
-      <br><hr><br>
-      <table width="1000" align="center" border="0" cellpadding="0">
-          <tbody>
-            <tr>
-              <td width="35%" valign="center">
-                <img src="./images/twist.png" alt="twist" width="300" height="" style="border-style: none">
-              </td>
-              <td width="65%" valign="center">
-                <p><a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/c859b99b5d717c9035e79d43dfd69435-Paper-Conference.pdf">
-                  <heading>Textually pretrained speech language models</heading></a><br>
-                  <span v-html="pub.authors"></span><br>
-                  <em>Michael Hassid*, Tal Remez*, Tu Anh Nguyen, Itai Gat, Alexis Conneau, Felix Kreuk, Jade Copet, Alexandre Defossez, Gabriel Synnaeve, Emmanuel Dupoux, Roy Schwartz, Yossi Adi</em>
-                  <br><br>
-                  NeurIPS 2024
-                </p>
-              </td>
-            </tr>
-        </tbody>
-      </table>
-      <br><hr><br>
-      <table width="1000" align="center" border="0" cellpadding="0">
-          <tbody>
-            <tr>
-              <td width="35%" valign="center">
-                <img src="./images/revise.png" alt="Revise" width="300" height="" style="border-style: none">
-              </td>
-              <td width="65%" valign="center">
-                <p><a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Hsu_ReVISE_Self-Supervised_Speech_Resynthesis_With_Visual_Input_for_Universal_and_CVPR_2023_paper.pdf">
-                  <heading>Revise: Self-supervised speech resynthesis with visual input for universal and generalized speech regeneration</heading></a><br>
-                  <span v-html="pub.authors"></span><br>
-                  <em>Wei-Ning Hsu, Tal Remez, Bowen Shi, Jacob Donley, Yossi Adi</em>
-                  <br><br>
-                  CVPR 2023
-                </p>
-              </td>
-            </tr>
-        </tbody>
-      </table>
-      <br><hr><br>
-      <table width="1000" align="center" border="0" cellpadding="0">
-          <tbody>
-            <tr>
-              <td width="35%" valign="center">
-                <img src="./images/vdtts_teaser.webp" alt="visually driven tts" width="300" height="" style="border-style: none">
-              </td>
-              <td width="65%" valign="center">
-                <p><a href="https://arxiv.org/abs/2111.10139">
-                  <heading>More than Words: In-the-Wild Visually-Driven Prosody for Text-to-Speech</heading></a><br>
-                  <span v-html="pub.authors"></span><br>
-                  <em>Michael Hassid, Michelle Tadmor Ramanovich, Brendan Shillingford, Miaosen Wang, Ye Jia, Tal Remez</em>
-                  <br><br>
-                  CVPR 2022
-                </p>
-              </td>
-            </tr>
-        </tbody>
-      </table>
-      <br><hr><br>
-      <table width="1000" align="center" border="0" cellpadding="0">
-          <tbody>
-            <tr>
-              <td width="35%" valign="center">
-                <img src="./images/audioscope2.png" alt="Improving On-Screen Sound Separation for Open Domain Videos with Audio-Visual Self-attention" width="300" height="" style="border-style: none">
-              </td>
-              <td width="65%" valign="center">
-                <p><a href="https://arxiv.org/abs/2106.09669">
-                  <heading>Improving On-Screen Sound Separation for Open Domain Videos with Audio-Visual Self-attention</heading></a><br>
-                  <span v-html="pub.authors"></span><br>
-                  <em>Efthymios Tzinis, Scott Wisdom, Tal Remez, John R Hershey</em>
-                  <br><br>
-                  CVPR 2022
-                </p>
-              </td>
-            </tr>
-        </tbody>
-      </table>
-      <br><hr><br>
-      <table width="1000" align="center" border="0" cellpadding="0">
-          <tbody>
-            <tr>
-              <td width="35%" valign="center">
-                <img src="./images/translatotron2.png" alt="Translatotron 2: Robust direct speech-to-speech translation" width="300" height="" style="border-style: none">
-              </td>
-              <td width="65%" valign="center">
-                <p><a href="https://arxiv.org/abs/2107.08661">
-                  <heading>Translatotron 2: Robust direct speech-to-speech translation</heading></a><br>
-                  <span v-html="pub.authors"></span><br>
-                  <em>Ye Jia, Michelle Tadmor Ramanovich, Tal Remez, Roi Pomerantz</em>
-                  <br><br>
-                  ICML 2022
-                  <br><br>
+      <!-- Publication: Discrete flow matching -->
 
-                  <a href="https://ai.googleblog.com/2021/09/high-quality-robust-and-responsible.html">Website</a>
-                </p>
-              </td>
-            </tr>
-        </tbody>
-      </table>
-      <br><hr><br>
-      <table width="1000" align="center" border="0" cellpadding="0">
-          <tbody>
-            <tr>
-              <td width="35%" valign="center">
-                <img src="./images/audioscope.png" alt="Into the Wild with AudioScope: Unsupervised Audio-Visual Separation of On-Screen Sounds" width="300" height="" style="border-style: none">
-              </td>
-              <td width="65%" valign="center">
-                <p><a href="https://arxiv.org/abs/2011.01143">
-                  <heading>Into the Wild with AudioScope: Unsupervised Audio-Visual Separation of On-Screen Sounds</heading></a><br>
-                  <span v-html="pub.authors"></span><br>
-                  <em>Efthymios Tzinis, Scott Wisdom, Aren Jansen, Shawn Hershey, Tal Remez, Daniel P. W. Ellis, John R. Hershey</em>
-                  <br><br>
-                  ICLR 2021
-                </p>
-              </td>
-            </tr>
-        </tbody>
-      </table>
-      <br><hr><br>
-      <table width="1000" align="center" border="0" cellpadding="0">
-          <tbody>
-            <tr>
-              <td width="35%" valign="center">
-                <img src="./images/learning_to_segment.png" alt="Learning to Segment via Cut-and-Paste" width="300" height="" style="border-style: none">
-              </td>
-              <td width="65%" valign="center">
-                <p><a href="https://openaccess.thecvf.com/content_ECCV_2018/papers/Tal_Remez_Learning_to_Segment_ECCV_2018_paper.pdf">
-                  <heading>Learning to Segment via Cut-and-Paste</heading></a><br>
-                  <span v-html="pub.authors"></span><br>
-                  <em>Tal Remez, Jonathan Huang, Matthew Brown</em>
-                  <br><br>
-                  ECCV 2018
-                </p>
-              </td>
-            </tr>
-        </tbody>
-      </table>
-      <br><hr><br>
-      <table width="1000" align="center" border="0" cellpadding="0">
-          <tbody>
-            <tr>
-              <td width="35%" valign="center">
-                <img src="./images/denoisenet.png" alt="Class-Aware Fully-Convolutional Gaussian and Poisson Denoising
-" width="300" height="" style="border-style: none">
-              </td>
-              <td width="65%" valign="center">
-                <p><a href="https://arxiv.org/abs/1808.06562">
-                  <heading>Class-Aware Fully-Convolutional Gaussian and Poisson Denoising
-</heading></a><br>
-                  <span v-html="pub.authors"></span><br>
-                  <em>Tal Remez, Or Litany, Raja Giryes, Alex M. Bronstein</em>
-                  <br><br>
-                  TIP 2018
-                </p>
-              </td>
-            </tr>
-        </tbody>
-      </table>
-      <br><hr><br>      
-      <table width="1000" align="center" border="0" cellpadding="0">
-          <tbody>
-            <tr>
-              <td width="35%" valign="center">
-                <img src="./images/fmnet.png" alt="Deep Functional Maps: Structured Prediction for Dense Shape Correspondence" width="300" height="" style="border-style: none">
-              </td>
-              <td width="65%" valign="center">
-                <p><a href="https://arxiv.org/abs/1704.08686">
-                  <heading>Deep Functional Maps: Structured Prediction for Dense Shape Correspondence</heading></a><br>
-                  <span v-html="pub.authors"></span><br>
-                  <em>Or Litany, Tal Remez, Emanuele Rodolà, Alex M. Bronstein, Michael M. Bronstein</em>
-                  <br><br>
-                  ICCV 2017
-                </p>
-              </td>
-            </tr>
-        </tbody>
-      </table>
-      <br><hr><br>
-      <table width="1000" align="center" border="0" cellpadding="0">
-          <tbody>
-            <tr>
-              <td width="35%" valign="center">
-                <img src="./images/class_aware.jpeg" alt="Deep Class Aware Image Denoising" width="300" height="" style="border-style: none">
-              </td>
-              <td width="65%" valign="center">
-                <p><a href="https://arxiv.org/abs/1701.01698">
-                  <heading>Deep Class Aware Image Denoising</heading></a><br>
-                  <span v-html="pub.authors"></span><br>
-                  <em>Tal Remez, Or Litany, Raja Giryes and Alex M. Bronstein</em>
-                  <br><br>
-                  ICIP 2017
-                  <br><br>
-                  <a href="https://github.com/TalRemez/deep_class_aware_denoising">GitHub</a>
-                </p>
-              </td>
-            </tr>
-        </tbody>
-      </table>
-      <br><hr><br>
-      <table width="1000" align="center" border="0" cellpadding="0">
-          <tbody>
-            <tr>
-              <td width="35%" valign="center">
-                <img src="./images/low_light.jpeg" alt="
-Deep Convolutional Denoising of Low-Light Images" width="300" height="" style="border-style: none">
-              </td>
-              <td width="65%" valign="center">
-                <p><a href="https://arxiv.org/abs/1701.01687">
-                  <heading>Deep Convolutional Denoising of Low-Light Images</heading></a><br>
-                  <span v-html="pub.authors"></span><br>
-                  <em>Tal Remez, Or Litany, Raja Giryes and Alex M. Bronstein</em>
-                  <br><br>
-                </p>
-              </td>
-            </tr>
-        </tbody>
-      </table>
-      <br><hr><br>
-      <table width="1000" align="center" border="0" cellpadding="0">
-          <tbody>
-            <tr>
-              <td width="35%" valign="center">
-                <img src="./images/cloud.png" alt="Cloud Dictionary: Sparse Coding and Modeling for Point Clouds" width="300" height="" style="border-style: none">
-              </td>
-              <td width="65%" valign="center">
-                <p><a href="https://arxiv.org/abs/1612.04956">
-                  <heading>Cloud Dictionary: Sparse Coding and Modeling for Point Clouds</heading></a><br>
-                  <span v-html="pub.authors"></span><br>
-                  <em>Or Litany*, Tal Remez*, Alex Bronstein</em>
-                  <br><br>
-                  SPARS 2017
-                </p>
-              </td>
-            </tr>
-        </tbody>
-      </table>
-      <br><hr><br>
-      <table width="1000" align="center" border="0" cellpadding="0">
-          <tbody>
-            <tr>
-              <td width="35%" valign="center">
-                <img src="./images/asist.png" alt="ASIST: Automatic Semantically Invariant Scene Transformation" width="300" height="" style="border-style: none">
-              </td>
-              <td width="65%" valign="center">
-                <p><a href="https://arxiv.org/abs/1512.01515">
-                  <heading>ASIST: Automatic Semantically Invariant Scene Transformation</heading></a><br>
-                  <span v-html="pub.authors"></span><br>
-                  <em>Or Litany, Tal Remez, Daniel Freedman, Lior Shapira, Alex Bronstein, Ran Gal</em>
-                  <br><br>
-                  CVIU 2017
-                </p>
-              </td>
-            </tr>
-        </tbody>
-      </table>
-      <br><hr><br>
-      <table width="1000" align="center" border="0" cellpadding="0">
-          <tbody>
-            <tr>
-              <td width="35%" valign="center">
-                <img src="./images/cartmen.png" alt="A picture is worth a billion bits: Real-time image reconstruction from dense binary threshold pixels" width="300" height="" style="border-style: none">
-              </td>
-              <td width="65%" valign="center">
-                <p><a href="https://arxiv.org/abs/1510.04601">
-                  <heading>A picture is worth a billion bits: Real-time image reconstruction from dense binary threshold pixels</heading></a><br>
-                  <span v-html="pub.authors"></span><br>
-                  <em>Tal Remez,Or Litany, Alex Bronstein</em>
-                  <br><br>
-                  ICCP 2016 Oral
-                </p>
-              </td>
-            </tr>
-        </tbody>
-      </table>
-      <br><hr><br>
-      <table width="1000" align="center" border="0" cellpadding="0">
-          <tbody>
-            <tr>
-              <td width="35%" valign="center">
-                <img src="./images/lena.png" alt="Image reconstruction from dense binary pixels" width="300" height="" style="border-style: none">
-              </td>
-              <td width="65%" valign="center">
-                <p><a href="https://arxiv.org/abs/1510.04601">
-                  <heading>Image reconstruction from dense binary pixels</heading></a><br>
-                  <span v-html="pub.authors"></span><br>
-                  <em>Or Litany*, Tal Remez*, Alex Bronstein</em>
-                  <br><br>
-                  SPARS 2015
-                </p>
-              </td>
-            </tr>
-        </tbody>
-      </table>
-      <br><hr><br>
-    </body> 
+      <!-- Publication: The Larger the Better? -->
+      <div class="pub-item">
+        <div class="pub-image-container">
+          <img src="./images/larger.png" alt="Improved LLM Code-Generation" class="pub-image">
+        </div>
+        <div class="pub-content">
+          <div class="pub-venue">COLM 2024</div>
+          <a href="https://arxiv.org/abs/2404.00725" class="pub-title">The Larger the Better? Improved LLM Code-Generation via Budget Reallocation</a>
+          <div class="pub-authors">Michael Hassid*, Tal Remez*, Jonas Gehring, Roy Schwartz, Yossi Adi</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2404.00725">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Publication: Simple and controllable music generation -->
+      <div class="pub-item">
+        <div class="pub-image-container">
+          <img src="./images/musicgen.png" alt="Simple and controllable music generation" class="pub-image">
+        </div>
+        <div class="pub-content">
+          <div class="pub-venue">NeurIPS 2024</div>
+          <a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/94b472a1842cd7c56dcb125fb2765fbd-Paper-Conference.pdf" class="pub-title">Simple and controllable music generation</a>
+          <div class="pub-authors">Jade Copet, Felix Kreuk, Itai Gat, Tal Remez, David Kant, Gabriel Synnaeve, Yossi Adi, Alexandre Défossez</div>
+          <div class="pub-links">
+            <a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/94b472a1842cd7c56dcb125fb2765fbd-Paper-Conference.pdf">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Publication: Textually pretrained speech language models -->
+      <div class="pub-item">
+        <div class="pub-image-container">
+          <img src="./images/twist.png" alt="Textually pretrained speech language models" class="pub-image">
+        </div>
+        <div class="pub-content">
+          <div class="pub-venue">NeurIPS 2024</div>
+          <a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/c859b99b5d717c9035e79d43dfd69435-Paper-Conference.pdf" class="pub-title">Textually pretrained speech language models</a>
+          <div class="pub-authors">Michael Hassid*, Tal Remez*, Tu Anh Nguyen, Itai Gat, Alexis Conneau, Felix Kreuk, Jade Copet, Alexandre Defossez, Gabriel Synnaeve, Emmanuel Dupoux, Roy Schwartz, Yossi Adi</div>
+          <div class="pub-links">
+            <a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/c859b99b5d717c9035e79d43dfd69435-Paper-Conference.pdf">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Publication: Revise -->
+      <div class="pub-item">
+        <div class="pub-image-container">
+          <img src="./images/revise.png" alt="Revise" class="pub-image">
+        </div>
+        <div class="pub-content">
+          <div class="pub-venue">CVPR 2023</div>
+          <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Hsu_ReVISE_Self-Supervised_Speech_Resynthesis_With_Visual_Input_for_Universal_and_CVPR_2023_paper.pdf" class="pub-title">Revise: Self-supervised speech resynthesis with visual input for universal and generalized speech regeneration</a>
+          <div class="pub-authors">Wei-Ning Hsu, Tal Remez, Bowen Shi, Jacob Donley, Yossi Adi</div>
+          <div class="pub-links">
+            <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Hsu_ReVISE_Self-Supervised_Speech_Resynthesis_With_Visual_Input_for_Universal_and_CVPR_2023_paper.pdf">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Publication: In-the-Wild Visually-Driven Prosody -->
+      <div class="pub-item">
+        <div class="pub-image-container">
+          <img src="./images/vdtts_teaser.webp" alt="In-the-Wild Visually-Driven Prosody" class="pub-image">
+        </div>
+        <div class="pub-content">
+          <div class="pub-venue">CVPR 2022</div>
+          <a href="https://arxiv.org/abs/2111.10139" class="pub-title">More than Words: In-the-Wild Visually-Driven Prosody for Text-to-Speech</a>
+          <div class="pub-authors">Michael Hassid, Michelle Tadmor Ramanovich, Brendan Shillingford, Miaosen Wang, Ye Jia, Tal Remez</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2111.10139">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Publication: Improving On-Screen Sound Separation -->
+      <div class="pub-item">
+        <div class="pub-image-container">
+          <img src="./images/audioscope2.png" alt="Improving On-Screen Sound Separation" class="pub-image">
+        </div>
+        <div class="pub-content">
+          <div class="pub-venue">CVPR 2022</div>
+          <a href="https://arxiv.org/abs/2106.09669" class="pub-title">Improving On-Screen Sound Separation for Open Domain Videos with Audio-Visual Self-attention</a>
+          <div class="pub-authors">Efthymios Tzinis, Scott Wisdom, Tal Remez, John R Hershey</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2106.09669">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Publication: Translatotron 2 -->
+      <div class="pub-item">
+        <div class="pub-image-container">
+          <img src="./images/translatotron2.png" alt="Translatotron 2" class="pub-image">
+        </div>
+        <div class="pub-content">
+          <div class="pub-venue">ICML 2022</div>
+          <a href="https://arxiv.org/abs/2107.08661" class="pub-title">Translatotron 2: Robust direct speech-to-speech translation</a>
+          <div class="pub-authors">Ye Jia, Michelle Tadmor Ramanovich, Tal Remez, Roi Pomerantz</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2107.08661">Paper</a>
+            <a href="https://ai.googleblog.com/2021/09/high-quality-robust-and-responsible.html">Blog Post</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Publication: AudioScope -->
+      <div class="pub-item">
+        <div class="pub-image-container">
+          <img src="./images/audioscope.png" alt="AudioScope" class="pub-image">
+        </div>
+        <div class="pub-content">
+          <div class="pub-venue">ICLR 2021</div>
+          <a href="https://arxiv.org/abs/2011.01143" class="pub-title">Into the Wild with AudioScope: Unsupervised Audio-Visual Separation of On-Screen Sounds</a>
+          <div class="pub-authors">Efthymios Tzinis, Scott Wisdom, Aren Jansen, Shawn Hershey, Tal Remez, Daniel P. W. Ellis, John R. Hershey</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2011.01143">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Publication: Learning to Segment -->
+      <div class="pub-item">
+        <div class="pub-image-container">
+          <img src="./images/learning_to_segment.png" alt="Learning to Segment" class="pub-image">
+        </div>
+        <div class="pub-content">
+          <div class="pub-venue">ECCV 2018</div>
+          <a href="https://openaccess.thecvf.com/content_ECCV_2018/papers/Tal_Remez_Learning_to_Segment_ECCV_2018_paper.pdf" class="pub-title">Learning to Segment via Cut-and-Paste</a>
+          <div class="pub-authors">Tal Remez, Jonathan Huang, Matthew Brown</div>
+          <div class="pub-links">
+            <a href="https://openaccess.thecvf.com/content_ECCV_2018/papers/Tal_Remez_Learning_to_Segment_ECCV_2018_paper.pdf">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Publication: Class-Aware Denoising -->
+      <div class="pub-item">
+        <div class="pub-image-container">
+          <img src="./images/denoisenet.png" alt="Class-Aware Denoising" class="pub-image">
+        </div>
+        <div class="pub-content">
+          <div class="pub-venue">TIP 2018</div>
+          <a href="https://arxiv.org/abs/1808.06562" class="pub-title">Class-Aware Fully-Convolutional Gaussian and Poisson Denoising</a>
+          <div class="pub-authors">Tal Remez, Or Litany, Raja Giryes, Alex M. Bronstein</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/1808.06562">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Publication: Deep Functional Maps -->
+      <div class="pub-item">
+        <div class="pub-image-container">
+          <img src="./images/fmnet.png" alt="Deep Functional Maps" class="pub-image">
+        </div>
+        <div class="pub-content">
+          <div class="pub-venue">ICCV 2017</div>
+          <a href="https://arxiv.org/abs/1704.08686" class="pub-title">Deep Functional Maps: Structured Prediction for Dense Shape Correspondence</a>
+          <div class="pub-authors">Or Litany, Tal Remez, Emanuele Rodolà, Alex M. Bronstein, Michael M. Bronstein</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/1704.08686">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Publication: Deep Class Aware Image Denoising -->
+      <div class="pub-item">
+        <div class="pub-image-container">
+          <img src="./images/class_aware.jpeg" alt="Deep Class Aware Image Denoising" class="pub-image">
+        </div>
+        <div class="pub-content">
+          <div class="pub-venue">ICIP 2017</div>
+          <a href="https://arxiv.org/abs/1701.01698" class="pub-title">Deep Class Aware Image Denoising</a>
+          <div class="pub-authors">Tal Remez, Or Litany, Raja Giryes and Alex M. Bronstein</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/1701.01698">Paper</a>
+            <a href="https://github.com/TalRemez/deep_class_aware_denoising">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Publication: Low-Light Denoising -->
+      <div class="pub-item">
+        <div class="pub-image-container">
+          <img src="./images/low_light.jpeg" alt="Low-Light Denoising" class="pub-image">
+        </div>
+        <div class="pub-content">
+          <div class="pub-venue">2017</div>
+          <a href="https://arxiv.org/abs/1701.01687" class="pub-title">Deep Convolutional Denoising of Low-Light Images</a>
+          <div class="pub-authors">Tal Remez, Or Litany, Raja Giryes and Alex M. Bronstein</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/1701.01687">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Publication: Cloud Dictionary -->
+      <div class="pub-item">
+        <div class="pub-image-container">
+          <img src="./images/cloud.png" alt="Cloud Dictionary" class="pub-image">
+        </div>
+        <div class="pub-content">
+          <div class="pub-venue">SPARS 2017</div>
+          <a href="https://arxiv.org/abs/1612.04956" class="pub-title">Cloud Dictionary: Sparse Coding and Modeling for Point Clouds</a>
+          <div class="pub-authors">Or Litany*, Tal Remez*, Alex Bronstein</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/1612.04956">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Publication: ASIST -->
+      <div class="pub-item">
+        <div class="pub-image-container">
+          <img src="./images/asist.png" alt="ASIST" class="pub-image">
+        </div>
+        <div class="pub-content">
+          <div class="pub-venue">CVIU 2017</div>
+          <a href="https://arxiv.org/abs/1512.01515" class="pub-title">ASIST: Automatic Semantically Invariant Scene Transformation</a>
+          <div class="pub-authors">Or Litany, Tal Remez, Daniel Freedman, Lior Shapira, Alex Bronstein, Ran Gal</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/1512.01515">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Publication: A picture is worth a billion bits -->
+      <div class="pub-item">
+        <div class="pub-image-container">
+          <img src="./images/cartmen.png" alt="A picture is worth a billion bits" class="pub-image">
+        </div>
+        <div class="pub-content">
+          <div class="pub-venue">ICCP 2016 Oral</div>
+          <a href="https://arxiv.org/abs/1510.04601" class="pub-title">A picture is worth a billion bits: Real-time image reconstruction from dense binary threshold pixels</a>
+          <div class="pub-authors">Tal Remez, Or Litany, Alex Bronstein</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/1510.04601">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Publication: Image reconstruction from dense binary pixels -->
+      <div class="pub-item">
+        <div class="pub-image-container">
+          <img src="./images/lena.png" alt="Image reconstruction from dense binary pixels" class="pub-image">
+        </div>
+        <div class="pub-content">
+          <div class="pub-venue">SPARS 2015</div>
+          <a href="https://arxiv.org/abs/1510.04601" class="pub-title">Image reconstruction from dense binary pixels</a>
+          <div class="pub-authors">Or Litany*, Tal Remez*, Alex Bronstein</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/1510.04601">Paper</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
 </html>
