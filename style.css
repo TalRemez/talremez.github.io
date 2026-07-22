@@ -81,6 +81,7 @@ h1.title {
   height: 240px;
   border-radius: 30px; /* Modern "squircle" look */
   object-fit: cover;
+  object-position: top;
   flex-shrink: 0;
   box-shadow: var(--card-shadow);
   transition: var(--transition);
